@@ -1,6 +1,9 @@
 # dependencies
 node_modules/
 
+# uploaded candidate videos — raw user data, never commit
+backend/uploads/
+
 # secrets — never commit real keys, only .env.example
 .env
 .env.*.local

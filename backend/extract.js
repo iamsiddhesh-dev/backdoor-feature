@@ -43,10 +43,7 @@ STRICT RULES (violating these makes the output unusable):
 6. If the transcript contains little or no usable signal, return short/empty
    arrays and a low confidence_score rather than fabricating content to fill
    the schema.
-7. "email_hooks" must be short, concrete lines a founder could paste into a
-   cold outreach email — reference specific things the candidate said, not
-   generic flattery.
-8. "founder_blurb" must NEVER be an empty string, even when the transcript is
+7. "founder_blurb" must NEVER be an empty string, even when the transcript is
    thin or low-signal. If there is little concrete signal, write an honest
    2-3 sentence summary that reflects that thinness (e.g. describes tone and
    the few facts stated) rather than leaving it blank or inventing substance.
@@ -56,8 +53,7 @@ OUTPUT FORMAT — return exactly this JSON shape, no extra keys:
   "resume_additions": string[],
   "founder_blurb": string,
   "confidence_score": integer (0-100, NOT a decimal fraction),
-  "confidence_reasoning": string,
-  "email_hooks": string[]
+  "confidence_reasoning": string
 }`;
 
 /**
