@@ -1,4 +1,4 @@
-# Backdoor Video Signal
+# Backdoor Candidate Video Feature
 
 A working proof-of-concept for a startup-hiring AI agent feature: a candidate
 records a short video intro on their phone, an LLM extracts hiring signal
@@ -6,7 +6,7 @@ from it, and that signal enriches their resume and gives founders a
 confidence-scored summary — with the candidate's actual video only surfacing
 once the signal is strong enough to be worth a founder's time.
 
-Built end-to-end in a weekend: native camera capture, real transcription,
+Built end-to-end: native camera capture, real transcription,
 LLM extraction, a candidate-facing review flow, and a confidence-gated
 founder view.
 
