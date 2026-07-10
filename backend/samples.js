@@ -2,7 +2,7 @@
 // before any real camera/transcription pipeline exists.
 
 module.exports = {
-  rahul: `Hi, I am Rahul, a recent Computer Science graduate from Bits pilani with a
+  user: `Hi, I am Rahul, a recent Computer Science graduate from Bits pilani with a
 strong interest in quantitative finance and data-driven systems. I worked as
 a quantitative analyst at Tower Research Capital where I built and analyzed
 models, worked with large data sets and helped improve trading strategies
