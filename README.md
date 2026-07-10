@@ -1,4 +1,4 @@
-# Backdoor Candidate Video Feature
+# Candidate Video Feature
 
 A working proof-of-concept for a startup-hiring AI agent feature: a candidate
 records a short video intro on their phone, an LLM extracts hiring signal
