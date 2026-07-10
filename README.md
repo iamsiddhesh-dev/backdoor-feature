@@ -39,8 +39,8 @@ More stages (preview, confirmation, backend logs, video review) are in
 ## Stack
 
 - **Mobile:** Expo (React Native) — `expo-camera` for capture, `expo-video`
-  for preview, cross-platform by design (Android tested via Expo Go; iOS
-  needs no code changes, only an EAS build to verify).
+  for preview, cross-platform by design and verified on real devices on
+  both Android and iOS via Expo Go, with no platform-specific code needed.
 - **Backend:** Node/Express — Groq Whisper for transcription, Groq
   Llama for extraction, `ffmpeg` to strip video down to audio-only before
   transcription (keeps uploads small and fast).
@@ -64,7 +64,8 @@ npm install
 npx expo start --lan   # phone and computer must be on the same Wi-Fi
 ```
 
-Scan the QR code with Expo Go on Android. Update `BACKEND_URL` in
+Scan the QR code with Expo Go (Android: use the QR scanner inside Expo Go;
+iOS: scan with the Camera app). Update `BACKEND_URL` in
 `mobile/processVideo.js` to your machine's LAN IP.
 
 ## Known limitations (it's a demo, on purpose)
@@ -75,8 +76,8 @@ Scan the QR code with Expo Go on Android. Update `BACKEND_URL` in
   network.
 - Confidence threshold (70) is a placeholder constant, not tuned against
   real outcomes.
-- Tested on Android; iOS uses the same cross-platform code but hasn't been
-  run on a real device yet.
+- Confirmed working on real Android and iOS devices via Expo Go; a
+  standalone build (EAS) hasn't been produced for either platform yet.
 
 ## Why this exists
 
